@@ -53,8 +53,19 @@ const DoctorLogin = async(req,res)=>{
 
 
 
+const doctorSearch=async(req, res)=>{
+  const { name, specility}=req.body;
+   
+  const Doctor = await DoctorModel.find({$or:[{"name":name}, {"specility":specility}]})
+  console.log(Doctor);
+  res.status(200).send(Doctor);
+}
+
+
+
 module.exports = {
     DoctorRegistred,
     DoctorDisplay,
-    DoctorLogin
+    DoctorLogin,
+    doctorSearch
 }
