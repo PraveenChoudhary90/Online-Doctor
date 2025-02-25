@@ -15,7 +15,7 @@ const Topnav = ()=>{
             <Nav.Link as={Link}  to="home">Home</Nav.Link>
             <Nav.Link as={Link}  to="about">About</Nav.Link>
             <Nav.Link as={Link}  to="search">Doctor Search</Nav.Link>
-            <Nav.Link as={Link}  to="registration"  >Doctor Registration</Nav.Link>
+            <Nav.Link as={Link}  to="registration">Doctor Registration</Nav.Link>
             <Nav.Link as={Link}  to="login">Doctor Login</Nav.Link>
           </Nav>
         </Container>

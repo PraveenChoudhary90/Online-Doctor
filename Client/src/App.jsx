@@ -24,11 +24,11 @@ function App() {
         <Route path='registration' element={<DoctorResigtraction/>}/>
         </Route>
       </Routes>
-      {/* <Routes>
+      <Routes>
         <Route path='dashboard' element={<DoctorHomeDashboard/>}>
 
         </Route>
-      </Routes> */}
+      </Routes>
       </BrowserRouter>
     </>
   )
