@@ -10,7 +10,7 @@ const Topnav = ()=>{
         <>
         <Navbar bg="primary" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand as={Link}  to="home">Navbar</Navbar.Brand>
+          <Navbar.Brand as={Link}  to="home">Online E-Appointment</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link}  to="home">Home</Nav.Link>
             <Nav.Link as={Link}  to="about">About</Nav.Link>
