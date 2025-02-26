@@ -3,8 +3,10 @@ import { useEffect, useState } from "react";
 import BASE_URL from "../config";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useNavigate } from "react-router-dom";
 const Home = ()=>{
     const [mydata, setmydata] = useState([]);
+    const navigate = useNavigate();
 
 
    const Loaddata = async()=>{
@@ -24,6 +26,12 @@ const Home = ()=>{
    },[])
 
 
+   const Appoinment =()=>{
+    navigate("/patient")
+   }
+
+    
+
    const ans = mydata.map((key)=>{
     return(
         <>
@@ -38,7 +46,7 @@ const Home = ()=>{
 
 
         </Card.Text>
-        <Button variant="primary">Appoinment Now!!</Button>
+        <Button variant="primary" onClick={Appoinment}>Appoinment Now!!</Button>
       </Card.Body>
     </Card>
         </>

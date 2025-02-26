@@ -8,6 +8,7 @@ import DoctorLogin from './pages/DoctorLogin'
 import DoctorSearch from './pages/DoctorSearch'
 import DoctorResigtraction from './pages/DoctorRagistraction'
 import DoctorHomeDashboard from './pages/DoctorHomeDashboard'
+import Patient from './pages/Patient'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='about' element={<About/>}/>
         <Route path='search' element={<DoctorSearch/>}/>
         <Route path='login' element={<DoctorLogin/>}/>
+        <Route path='patient' element={<Patient/>}/>
         <Route path='registration' element={<DoctorResigtraction/>}/>
         </Route>
       </Routes>
