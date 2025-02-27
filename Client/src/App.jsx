@@ -9,6 +9,7 @@ import DoctorSearch from './pages/DoctorSearch'
 import DoctorResigtraction from './pages/DoctorRagistraction'
 import DoctorHomeDashboard from './pages/DoctorHomeDashboard'
 import BookNow from './pages/BookNow'
+import MyPatient from './pages/mypatient'
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
       </Routes>
       <Routes>
         <Route path='dashboard' element={<DoctorHomeDashboard/>}>
-
+         <Route path='mypatient' element={<MyPatient/>}/>
         </Route>
       </Routes>
       </BrowserRouter>
