@@ -26,9 +26,9 @@ const Home = ()=>{
    },[])
 
 
-   const Appoinment =()=>{
-    navigate("/patient")
-   }
+   const appointment = (id)=>{
+    navigate(`/booknow/${id}`)
+  }
 
     
 
@@ -46,7 +46,7 @@ const Home = ()=>{
 
 
         </Card.Text>
-        <Button variant="primary" onClick={Appoinment}>Appoinment Now!!</Button>
+        <Button variant="primary" onClick={appointment }>Appoinment Now!!</Button>
       </Card.Body>
     </Card>
         </>

@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 require("dotenv").config();
 const DoctorRoute = require("./Routes/DoctorRoute")
+const PatientRoute = require("./Routes/patientRoute")
 
 app.use(cors());
 
@@ -18,6 +19,7 @@ mongoose.connect(process.env.CONNECTION).then(()=>{
     console.log("DB IS CONNECTED")
 })
 app.use("/Doctor", DoctorRoute )
+app.use("/patient", PatientRoute)
 const port = process.env.PORT || 8000;
 
 app.listen(port, ()=>{
