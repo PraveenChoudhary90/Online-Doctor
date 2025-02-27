@@ -7,7 +7,7 @@ const patientSchema = new mongoose.Schema({
     address : String,
     number : String,
     docid : {
-        type : mongoose.Schema.Types.ObjectId,
+        type : mongoose.Schema.ObjectId,
         ref : "doctor"
     }
 })

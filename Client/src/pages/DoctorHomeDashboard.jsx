@@ -28,6 +28,7 @@ const DoctorHomeDashboard = () => {
       const res = await axios.get(api)
       console.log(res)
       setApiData(res.data)
+      nav("/mypatient")
 
     } catch (error) {
       console.log(error)

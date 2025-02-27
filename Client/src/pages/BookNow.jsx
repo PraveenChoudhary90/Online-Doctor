@@ -44,7 +44,7 @@ const submitHandler = async(e)=>{
     <h1 align = "center">Take Appointment : {id}</h1>
     <hr />
     <h4 align = "center">Doctor Name : {docInfo.name}</h4>
-    <h4 align = "center">Doctor Speciality : {docInfo.speciality}</h4>
+    <h4 align = "center">Doctor Speciality : {docInfo.specility}</h4>
    
     <hr />
     <Form style={{width : "500px", margin : "auto"}}>
