@@ -1,4 +1,4 @@
-const docModel = require("../model/doctorModel")
+const docModel = require("../Model/DoctorModel")
 const patientModel = require("../Model/PatientModel");
 
 
